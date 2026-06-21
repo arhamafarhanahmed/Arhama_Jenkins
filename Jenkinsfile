@@ -58,7 +58,7 @@ pipeline {
                     docker stop jenkins-demo || true
                     docker rm jenkins-demo || true
                     docker pull $DOCKER_IMAGE:latest
-                    docker run -d -p 3000:3000 --name jenkins-demo $DOCKER_IMAGE:latest
+                    docker run -d -p 4000:4000 --name jenkins-demo $DOCKER_IMAGE:latest
                 '''
             }
         }
